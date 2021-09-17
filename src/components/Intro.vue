@@ -30,7 +30,7 @@ export default {
 
 @media screen and (max-width: $bp-laptop-l) {
 	.intro {
-		background-size: 140%;
+		background-size: cover;
 	}
 }
 @media screen and (max-width: $bp-tablet) {
