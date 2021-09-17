@@ -33,15 +33,18 @@
 </template>
 
 <script>
+let toggle = false;
 export default {
 	name: "Header",
+
 	methods: {
 		toggleFunc() {
-			let counter = 0;
-			if (counter % 2 === 0) {
+			toggle = !toggle;
+			if (toggle) {
 				document.getElementById("nav-ul").style.top = "0";
-				counter++;
-			} else document.getElementById("nav-ul").style.top = "-200";
+			} else {
+				document.getElementById("nav-ul").style.top = "-300";
+			}
 		},
 	},
 };
@@ -105,11 +108,11 @@ a:hover::before {
 	transform: scaleX(1);
 }
 .submit-application::before {
-	width: 120%;
+	width: 110%;
 }
 .submit-application::after {
 	content: "";
-	width: 120%;
+	width: 110%;
 	position: absolute;
 	left: 0;
 	bottom: -4px;
@@ -124,8 +127,12 @@ a:hover::before {
 	.navbar {
 		display: none;
 	}
+	.submit-application::after {
+		width: 100%;
+	}
 	.button {
 		display: block;
+		z-index: 100;
 		margin-right: 20px;
 	}
 	.nav-ul {
@@ -135,10 +142,10 @@ a:hover::before {
 		margin: 0;
 		padding: 0;
 		background-color: $heading-text;
-		top: -200px;
+		top: -300px;
 		list-style-type: none;
 		li {
-			height: 50px;
+			height: 60px;
 			text-align: center;
 			width: 100vw;
 		}

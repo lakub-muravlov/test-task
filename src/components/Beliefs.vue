@@ -42,7 +42,6 @@ export default {
 @import "/src/assets/styles/variables.scss";
 
 .beliefs {
-	z-index: 5;
 	background-color: $beliefs-section-bg;
 	min-height: 700px;
 	margin-bottom: 120px;
@@ -69,6 +68,8 @@ export default {
 		max-height: 494px;
 		max-width: 720px;
 		position: relative;
+		z-index: 1;
+
 		margin-bottom: -350px;
 		top: -450px;
 		left: 700px;
@@ -144,10 +145,10 @@ export default {
 	}
 	.offers-grid {
 		overflow: hidden;
-		min-height: 80vh;
+		min-height: 35vh;
 		display: grid;
 		margin-left: 5%;
-		margin-top: 45vh;
+		margin-top: 300px;
 		grid-template-columns: 260px;
 		grid-template-rows: auto;
 		grid-row-gap: 20px;
@@ -182,6 +183,37 @@ export default {
 			top: -440px;
 			left: 95px;
 			right: 0;
+		}
+	}
+	.offers-grid {
+		overflow: hidden;
+		min-height: 54vh;
+		display: grid;
+		margin-left: 5%;
+		margin-top: 315px;
+		grid-template-columns: 260px;
+		grid-template-rows: auto;
+		grid-row-gap: 25px;
+
+		h2 {
+			margin-left: 0;
+			margin-top: 0%;
+			align-self: flex-end;
+			justify-self: flex-start;
+			position: relative;
+		}
+		p {
+			margin-bottom: 0%;
+			align-self: center;
+		}
+		h2::after {
+			content: "";
+			width: 25%;
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			border-width: 0 0 3px;
+			border-style: solid;
 		}
 	}
 }

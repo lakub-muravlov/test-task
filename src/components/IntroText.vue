@@ -89,7 +89,7 @@ p {
 		p {
 			color: $intro-text;
 			width: 65%;
-			margin-left: 40px;
+			margin-left: 80px;
 			margin-bottom: 38px;
 		}
 	}
@@ -116,6 +116,22 @@ p {
 			color: black;
 			background-color: #fff;
 			transition: 700ms;
+		}
+	}
+}
+
+@media only screen and (max-width: $bp-mobile-l) {
+	.company-motto {
+		p {
+			color: $intro-text;
+			width: 65%;
+			margin-left: 40px;
+			margin-bottom: 38px;
+		}
+	}
+	.learn-more {
+		button {
+			margin-bottom: 20px;
 		}
 	}
 }
