@@ -1,0 +1,32 @@
+<template>
+	<footer>
+		<div class="flex fd-row content-container jc-sb ai-center">
+			<p>©2021 Test. All rights reserved</p>
+			<img src="../assets/styles/img/logo-footer.svg" alt="" />
+		</div>
+	</footer>
+</template>
+
+<script>
+export default {
+	name: "Footer",
+};
+</script>
+
+<style scoped lang="scss">
+@import "/src/assets/styles/variables.scss";
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border: 1px solid red;
+	div {
+		height: 150px;
+	}
+}
+p {
+	color: $block-text;
+	font-size: 0.6em;
+}
+</style>

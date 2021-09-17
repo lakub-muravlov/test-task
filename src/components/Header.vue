@@ -24,7 +24,7 @@ export default {
 	height: 120px;
 }
 img {
-	margin-left: 100px;
+	margin-left: 130px;
 }
 .navbar {
 	width: 50%;
@@ -60,6 +60,16 @@ a::before {
 a:hover::before {
 	transform: scaleX(1);
 }
-.submit-application {
+
+.submit-application:after {
+	content: "";
+
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+
+	border-width: 0 0 2px;
+	border-style: solid;
 }
 </style>

@@ -13,12 +13,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "/src/assets/styles/variables.scss";
+
 .intro {
 	margin: 0 auto;
 	overflow: hidden;
 	background-image: url("/img/intro.png");
+	background-repeat: no-repeat;
+	background-size: 100% calc(100vw / 2);
 	box-shadow: inset 0 0 0 1000px rgba(72, 88, 141, 0.7);
 	height: 700px;
+	color: $intro-text;
 }
 </style>
