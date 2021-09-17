@@ -115,7 +115,7 @@ export default {
 }
 @media screen and (max-width: $bp-tablet) {
 	.beliefs {
-		margin-bottom: 150px;
+		margin-bottom: 120px;
 	}
 	.company-belief {
 		h1 {
@@ -134,23 +134,23 @@ export default {
 			color: $block-text;
 		}
 		img {
-			width: 90vw;
+			width: 50vw;
 			position: relative;
 			margin-bottom: -350vw;
-			top: -800px;
-			left: 0px;
+			top: -510px;
+			left: 290px;
 			right: 0;
 		}
 	}
 	.offers-grid {
 		overflow: hidden;
-		min-height: 50vh;
+		min-height: 80vh;
 		display: grid;
 		margin-left: 5%;
-		margin-top: 40vh;
+		margin-top: 80vh;
 		grid-template-columns: 260px;
 		grid-template-rows: auto;
-		grid-row-gap: 6px;
+		grid-row-gap: 20px;
 
 		h2 {
 			margin-left: 0;
@@ -169,6 +169,19 @@ export default {
 			bottom: -20px;
 			border-width: 0 0 3px;
 			border-style: solid;
+		}
+	}
+}
+
+@media screen and (max-width: $bp-mobile-l) {
+	.company-belief {
+		img {
+			width: 70vw;
+			position: relative;
+			margin-bottom: -350vw;
+			top: -440px;
+			left: 95px;
+			right: 0;
 		}
 	}
 }

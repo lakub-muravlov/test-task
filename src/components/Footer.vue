@@ -36,7 +36,7 @@ p {
 			flex-direction: column;
 			align-items: flex-start;
 			width: 90%;
-			height: 150px;
+			height: 120px;
 		}
 		p {
 			width: 45%;

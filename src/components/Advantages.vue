@@ -2,16 +2,17 @@
 	<section class="advantages content-container">
 		<h1>Advantages</h1>
 		<h2>Partnership</h2>
-		<h2>Professional community</h2>
-		<h2>Successful wins</h2>
 		<p>
 			We make sure projects become successful through strategic partnership and
 			guidance
 		</p>
+		<h2>Professional community</h2>
 		<p>
 			At our disposal are top industries professionals who constantly share
 			their experience with our partners
 		</p>
+		<h2>Successful wins</h2>
+
 		<p>
 			Our Background is full of successfully deployed projects. We know how to
 			lead you to success
@@ -32,6 +33,7 @@ export default {
 	min-height: 550px;
 	display: grid;
 	justify-content: center;
+	grid-auto-flow: column;
 	grid-gap: 0px 30px;
 	grid-template-rows: 250px 100px auto;
 	grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4);
@@ -68,19 +70,25 @@ export default {
 @media only screen and (max-width: $bp-tablet) {
 	h1 {
 		align-self: center;
-
+		margin-bottom: 20px;
 		font-size: 1.8em;
 	}
 
 	.advantages {
-		overflow: hidden;
-		display: grid;
-		align-content: center;
-		grid-column: auto;
-		grid-template-rows: 20px;
-		grid-row-gap: 20px;
-
-		margin-bottom: 50vw;
+		display: flex;
+		max-width: 90%;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+		h1 {
+			align-self: flex-start;
+		}
+		h2 {
+			align-self: flex-start;
+		}
+		h2::after {
+			bottom: -20px;
+		}
 	}
 }
 </style>

@@ -126,6 +126,7 @@ a:hover::before {
 	}
 	.button {
 		display: block;
+		margin-right: 20px;
 	}
 	.nav-ul {
 		display: inline-block;
