@@ -42,8 +42,18 @@ export default {
 			toggleHandler = !toggleHandler;
 			if (toggleHandler) {
 				document.getElementById("nav-ul").style.top = "0";
+				document.querySelector(".bar1").style.transform =
+					"rotate(-45deg) translate(-9px, 6px)";
+				document.querySelector(".bar2").style.opacity = "0";
+				document.querySelector(".bar3").style.transform =
+					"rotate(45deg) translate(-8px, -8px)";
 			} else {
 				document.getElementById("nav-ul").style.top = "-300px";
+				document.querySelector(".bar1").style.transform =
+					"rotate(180deg) translate(0px, 0px)";
+				document.querySelector(".bar2").style.opacity = "1";
+				document.querySelector(".bar3").style.transform =
+					"rotate(-180deg) translate(0px, 0px)";
 			}
 		},
 	},
@@ -56,17 +66,17 @@ export default {
 	display: none;
 	float: right;
 	cursor: pointer;
+	.bar1,
+	.bar2,
+	.bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #fff;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
 }
 
-.bar1,
-.bar2,
-.bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: #fff;
-	margin: 6px 0;
-	transition: 0.4s;
-}
 .nav-ul {
 	display: none;
 }
