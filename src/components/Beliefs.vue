@@ -68,7 +68,6 @@ export default {
 		max-height: 494px;
 		max-width: 720px;
 		position: relative;
-		z-index: 1;
 
 		margin-bottom: -350px;
 		top: -450px;

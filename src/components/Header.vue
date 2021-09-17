@@ -33,17 +33,17 @@
 </template>
 
 <script>
-let toggle = false;
+let toggleHandler = false;
 export default {
 	name: "Header",
 
 	methods: {
 		toggleFunc() {
-			toggle = !toggle;
-			if (toggle) {
+			toggleHandler = !toggleHandler;
+			if (toggleHandler) {
 				document.getElementById("nav-ul").style.top = "0";
 			} else {
-				document.getElementById("nav-ul").style.top = "-300";
+				document.getElementById("nav-ul").style.top = "-300px";
 			}
 		},
 	},
@@ -132,10 +132,11 @@ a:hover::before {
 	}
 	.button {
 		display: block;
-		z-index: 100;
+		z-index: 20;
 		margin-right: 20px;
 	}
 	.nav-ul {
+		z-index: 19;
 		display: inline-block;
 		position: fixed;
 		left: 0;
@@ -144,6 +145,7 @@ a:hover::before {
 		background-color: $heading-text;
 		top: -300px;
 		list-style-type: none;
+		transition: 1500ms;
 		li {
 			height: 60px;
 			text-align: center;
