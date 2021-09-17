@@ -147,7 +147,7 @@ export default {
 		min-height: 80vh;
 		display: grid;
 		margin-left: 5%;
-		margin-top: 80vh;
+		margin-top: 45vh;
 		grid-template-columns: 260px;
 		grid-template-rows: auto;
 		grid-row-gap: 20px;
