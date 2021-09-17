@@ -1,18 +1,24 @@
 <template>
-<div class="intro flex-container">
-  <header>
-
-  </header>
-</div>
+	<div class="flex intro">
+		<div class="content-container">
+			<slot />
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
-  name: "Intro",
-  components: {}
-}
+	name: "Intro",
+	components: {},
+};
 </script>
 
 <style scoped>
-
+.intro {
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url("/img/intro.png");
+	box-shadow: inset 0 0 0 1000px rgba(72, 88, 141, 0.7);
+	height: 700px;
+}
 </style>
