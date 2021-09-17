@@ -20,11 +20,13 @@
 		</div>
 	</section>
 </template>
+
 <script>
 export default {
 	name: "IntroText",
 };
 </script>
+
 <style scoped lang="scss">
 //y 572 x 372
 @import "/src/assets/styles/variables.scss";
@@ -33,10 +35,12 @@ p {
 }
 .company-motto {
 	h1 {
+		color: $intro-text;
 		margin-top: 54px;
 		margin-bottom: 54px;
 	}
 	p {
+		color: $intro-text;
 		margin-left: 20px;
 		margin-bottom: 108px;
 	}

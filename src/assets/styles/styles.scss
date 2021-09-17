@@ -9,17 +9,23 @@
 
 h1,
 h2 {
+	color: $heading-text;
 	font-family: $heading-font;
 }
 
 a,
 p {
+	color: $block-text;
 	font-family: "Roboto", serif;
 	font-weight: 500;
 }
 
 h1 {
 	font-size: 2.8em;
+}
+
+h2 {
+	font-size: 1em;
 }
 
 .flex {

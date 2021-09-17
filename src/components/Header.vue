@@ -41,13 +41,10 @@ a {
 	text-decoration: none;
 	position: relative;
 }
-a:hover {
-	color: $intro-text;
-}
+
 a::before {
 	content: "";
 	position: absolute;
-	display: block;
 	width: 100%;
 	height: 2px;
 	top: 20px;
@@ -61,15 +58,20 @@ a:hover::before {
 	transform: scaleX(1);
 }
 
-.submit-application:after {
-	content: "";
+.submit-application::before {
+	width: 120%;
+}
 
-	width: 100%;
+.submit-application::after {
+	content: "";
+	width: 120%;
 	position: absolute;
 	left: 0;
 	bottom: -4px;
-
 	border-width: 0 0 2px;
 	border-style: solid;
+}
+.submit-application:after:hover::before {
+	transform: scaleX(1);
 }
 </style>

@@ -18,15 +18,15 @@ export default {
 
 footer {
 	position: fixed;
+	background-color: white;
 	bottom: 0;
 	width: 100%;
 	border: 1px solid red;
 	div {
-		height: 150px;
+		height: 120px;
 	}
 }
 p {
-	color: $block-text;
 	font-size: 0.6em;
 }
 </style>
