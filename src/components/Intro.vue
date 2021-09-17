@@ -19,7 +19,7 @@ export default {
 .intro {
 	margin: 0 auto;
 	overflow: hidden;
-	background-image: url("/img/intro.png");
+	background-image: url("../assets/styles/img/intro.png");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: 100% calc(100vw / 2);
