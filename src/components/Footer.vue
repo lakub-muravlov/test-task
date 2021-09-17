@@ -1,7 +1,7 @@
 <template>
 	<footer>
 		<div class="flex fd-row content-container jc-sb ai-center">
-			<p>©2021 Test. All rights reserved</p>
+			<p>©2021 Test Vetures Inc. All rights reserved</p>
 			<img src="../assets/styles/img/logo-footer.svg" alt="" />
 		</div>
 	</footer>
@@ -27,5 +27,26 @@ footer {
 }
 p {
 	font-size: 0.6em;
+}
+
+@media only screen and (max-width: $bp-tablet) {
+	footer {
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 90%;
+			height: 150px;
+		}
+		p {
+			width: 35%;
+			margin-top: 50px;
+			font-size: 0.6em;
+		}
+		img {
+			width: 30%;
+			margin-bottom: 30px;
+		}
+	}
 }
 </style>

@@ -29,11 +29,11 @@ export default {
 @import "/src/assets/styles/variables.scss";
 
 .advantages {
-	height: 550px;
+	min-height: 550px;
 	display: grid;
 	justify-content: center;
 	grid-gap: 0px 30px;
-	grid-template-rows: 250px 100px 200px;
+	grid-template-rows: 250px 100px auto;
 	grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4);
 	h1 {
 		align-self: center;
@@ -54,7 +54,8 @@ export default {
 		border-style: solid;
 	}
 	p {
-		align-self: center;
+		margin-top: 50px;
+		align-self: flex-start;
 	}
 	margin-bottom: 120px;
 }
@@ -62,5 +63,24 @@ export default {
 .row1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
+}
+
+@media only screen and (max-width: $bp-tablet) {
+	h1 {
+		align-self: center;
+
+		font-size: 1.8em;
+	}
+
+	.advantages {
+		overflow: hidden;
+		display: grid;
+		align-content: center;
+		grid-template-columns: 260px;
+		grid-template-rows: auto;
+		grid-row-gap: 40px;
+
+		margin-bottom: 50vw;
+	}
 }
 </style>

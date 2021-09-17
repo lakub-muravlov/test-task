@@ -1,6 +1,6 @@
 <template>
-	<section class="beliefs">
-		<div class="content-container flex fd-column jc-right">
+	<section class="beliefs content-container">
+		<div class=" flex fd-column jc-right">
 			<div class="company-belief col-6 flex fd-column">
 				<h1 class="flex jc-center">Beliefs</h1>
 				<p class="flex jc-center">
@@ -44,14 +44,14 @@ export default {
 .beliefs {
 	z-index: 5;
 	background-color: $beliefs-section-bg;
-	height: 700px;
+	min-height: 700px;
 	margin-bottom: 120px;
 }
 
 .company-belief {
 	h1 {
 		align-self: flex-start;
-		margin-left: 110px;
+		margin-left: 100px;
 		margin-top: 54px;
 		margin-bottom: 54px;
 	}
@@ -99,6 +99,77 @@ export default {
 		bottom: -20px;
 		border-width: 0 0 3px;
 		border-style: solid;
+	}
+}
+
+@media screen and (max-width: $bp-laptop-s) {
+	.company-belief {
+		img {
+			left: 550px;
+			margin-bottom: -250px;
+		}
+		p {
+			margin-bottom: 50px;
+		}
+	}
+}
+@media screen and (max-width: $bp-tablet) {
+	.beliefs {
+		margin-bottom: 150px;
+	}
+	.company-belief {
+		h1 {
+			justify-content: flex-start;
+			margin-left: 0px;
+			margin-top: 24px;
+			margin-bottom: 24px;
+		}
+		p {
+			margin-left: 0px;
+			margin-bottom: 18px;
+		}
+		h2 {
+			margin-left: 0px;
+			font-size: 1.5em;
+			color: $block-text;
+		}
+		img {
+			width: 90vw;
+			position: relative;
+			margin-bottom: -350vw;
+			top: -800px;
+			left: 0px;
+			right: 0;
+		}
+	}
+	.offers-grid {
+		overflow: hidden;
+		min-height: 50vh;
+		display: grid;
+		margin-left: 5%;
+		margin-top: 40vh;
+		grid-template-columns: 260px;
+		grid-template-rows: auto;
+		grid-row-gap: 6px;
+
+		h2 {
+			margin-left: 0;
+			align-self: flex-end;
+			justify-self: flex-start;
+			position: relative;
+		}
+		p {
+			align-self: center;
+		}
+		h2::after {
+			content: "";
+			width: 25%;
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			border-width: 0 0 3px;
+			border-style: solid;
+		}
 	}
 }
 </style>

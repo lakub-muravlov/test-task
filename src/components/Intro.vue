@@ -26,4 +26,16 @@ export default {
 	height: 700px;
 	color: $intro-text;
 }
+
+@media screen and (max-width: $bp-laptop-l) {
+	.intro {
+		background-size: 140%;
+	}
+}
+@media screen and (max-width: $bp-tablet) {
+	.intro {
+		background-size: auto;
+		background-position: center;
+	}
+}
 </style>

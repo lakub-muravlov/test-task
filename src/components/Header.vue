@@ -41,7 +41,6 @@ a {
 	text-decoration: none;
 	position: relative;
 }
-
 a::before {
 	content: "";
 	position: absolute;
@@ -57,11 +56,9 @@ a::before {
 a:hover::before {
 	transform: scaleX(1);
 }
-
 .submit-application::before {
 	width: 120%;
 }
-
 .submit-application::after {
 	content: "";
 	width: 120%;
@@ -73,5 +70,13 @@ a:hover::before {
 }
 .submit-application:after:hover::before {
 	transform: scaleX(1);
+}
+@media only screen and (max-width: $bp-tablet) {
+	.navbar {
+		display: none;
+	}
+	img {
+		margin-left: 10px;
+	}
 }
 </style>
