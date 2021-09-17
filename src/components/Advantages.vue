@@ -63,18 +63,4 @@ export default {
 	grid-column-start: 1;
 	grid-column-end: 4;
 }
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 10px;
-	background-color: #2196f3;
-	padding: 10px;
-}
-
-.grid-container > div {
-	background-color: rgba(255, 255, 255, 0.8);
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px;
-}
 </style>

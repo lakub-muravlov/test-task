@@ -36,6 +36,7 @@ p {
 .company-motto {
 	h1 {
 		color: $intro-text;
+		margin-left: 40px;
 		margin-top: 54px;
 		margin-bottom: 54px;
 	}
@@ -54,6 +55,8 @@ p {
 	button {
 		width: 172px;
 		height: 48px;
+		margin-left: 20px;
+
 		font-size: 0.8em;
 		font-weight: 700;
 		background-color: transparent;

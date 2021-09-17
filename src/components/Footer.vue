@@ -21,7 +21,6 @@ footer {
 	background-color: white;
 	bottom: 0;
 	width: 100%;
-	border: 1px solid red;
 	div {
 		height: 120px;
 	}
