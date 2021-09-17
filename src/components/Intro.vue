@@ -20,6 +20,7 @@ export default {
 	margin: 0 auto;
 	overflow: hidden;
 	background-image: url("/img/intro.png");
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: 100% calc(100vw / 2);
 	box-shadow: inset 0 0 0 1000px rgba(72, 88, 141, 0.7);

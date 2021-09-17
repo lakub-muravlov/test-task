@@ -39,8 +39,8 @@ p {
 			height: 150px;
 		}
 		p {
-			width: 35%;
-			margin-top: 50px;
+			width: 45%;
+			margin-top: 30px;
 			font-size: 0.6em;
 		}
 		img {

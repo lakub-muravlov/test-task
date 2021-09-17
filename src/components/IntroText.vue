@@ -41,9 +41,10 @@ p {
 		margin-bottom: 54px;
 	}
 	p {
+		width: 60%;
 		color: $intro-text;
-		margin-left: 20px;
-		margin-bottom: 108px;
+		margin-left: 130px;
+		margin-bottom: 78px;
 	}
 }
 .learn-more {
@@ -89,7 +90,7 @@ p {
 			color: $intro-text;
 			width: 65%;
 			margin-left: 40px;
-			margin-bottom: 18px;
+			margin-bottom: 38px;
 		}
 	}
 	.learn-more {
@@ -101,8 +102,7 @@ p {
 		button {
 			width: 172px;
 			height: 48px;
-			margin-left: 40px;
-
+			margin-left: 80px;
 			font-size: 0.8em;
 			font-weight: 700;
 			background-color: transparent;

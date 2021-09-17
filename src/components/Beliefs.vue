@@ -1,6 +1,6 @@
 <template>
-	<section class="beliefs content-container">
-		<div class=" flex fd-column jc-right">
+	<section class="beliefs ">
+		<div class="content-container flex fd-column jc-right">
 			<div class="company-belief col-6 flex fd-column">
 				<h1 class="flex jc-center">Beliefs</h1>
 				<p class="flex jc-center">

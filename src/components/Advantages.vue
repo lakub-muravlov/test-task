@@ -76,9 +76,9 @@ export default {
 		overflow: hidden;
 		display: grid;
 		align-content: center;
-		grid-template-columns: 260px;
-		grid-template-rows: auto;
-		grid-row-gap: 40px;
+		grid-column: auto;
+		grid-template-rows: 20px;
+		grid-row-gap: 20px;
 
 		margin-bottom: 50vw;
 	}
