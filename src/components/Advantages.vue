@@ -1,28 +1,30 @@
 <template>
-	<section class="advantages content-container">
+	<section class="advantages content-container" id="advantages">
 		<h1>Advantages</h1>
-		<h2>Partnership</h2>
-		<p>
+		<AdvantageItem title="Partnership">
 			We make sure projects become successful through strategic partnership and
 			guidance
-		</p>
-		<h2>Professional community</h2>
-		<p>
+		</AdvantageItem>
+
+		<AdvantageItem title="Professional community">
 			At our disposal are top industries professionals who constantly share
 			their experience with our partners
-		</p>
-		<h2>Successful wins</h2>
+		</AdvantageItem>
 
-		<p>
+		<AdvantageItem title="Successful wins">
 			Our Background is full of successfully deployed projects. We know how to
 			lead you to success
-		</p>
+		</AdvantageItem>
 	</section>
 </template>
 
 <script>
+import AdvantageItem from "@/components/AdvantageItem";
 export default {
 	name: "Advantages",
+	components: {
+		AdvantageItem,
+	},
 };
 </script>
 
@@ -30,64 +32,56 @@ export default {
 @import "/src/assets/styles/variables.scss";
 
 .advantages {
-	min-height: 550px;
+	min-height: 200px;
+	padding-top: 70px;
+	padding-bottom: 115px;
 	display: grid;
 	justify-content: center;
-	grid-auto-flow: column;
-	grid-gap: 0px 30px;
-	grid-template-rows: 250px 100px auto;
+	grid-gap: 100px 15px;
+	grid-template-rows: auto auto;
 	grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4);
 	h1 {
 		align-self: center;
 		grid-column-start: 1;
 		grid-column-end: 4;
 	}
-	h2 {
-		align-self: center;
-		position: relative;
-	}
-	h2::after {
-		content: "";
-		width: 20%;
-		position: absolute;
-		left: 0;
-		bottom: -50px;
-		border-width: 0 0 3px;
-		border-style: solid;
-	}
-	p {
-		margin-top: 50px;
-		align-self: flex-start;
-	}
-	margin-bottom: 120px;
-}
-
-.row1 {
-	grid-column-start: 1;
-	grid-column-end: 4;
 }
 
 @media only screen and (max-width: $bp-tablet) {
 	h1 {
 		align-self: center;
-		margin-bottom: 20px;
 		font-size: 1.8em;
 	}
 
 	.advantages {
 		display: flex;
 		max-width: 90%;
+		margin-left: 30px;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-end;
 		h1 {
 			align-self: flex-start;
 		}
-		h2 {
+	}
+}
+@media only screen and (max-width: $bp-mobile-l) {
+	h1 {
+		margin-top: -75px;
+		padding-top: 20px;
+		align-self: flex-start;
+		font-size: 1.8em;
+	}
+
+	.advantages {
+		display: flex;
+		row-gap: 0px;
+		max-width: calc(100% - 30px);
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+		h1 {
 			align-self: flex-start;
-		}
-		h2::after {
-			bottom: -20px;
 		}
 	}
 }

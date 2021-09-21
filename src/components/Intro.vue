@@ -19,24 +19,24 @@ export default {
 .intro {
 	margin: 0 auto;
 	overflow: hidden;
-	background-image: url("../assets/styles/img/intro.png");
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: 100% calc(100vw / 2);
+	background-image: url("../assets/img/intro.png");
+	background-size: cover;
+	background-position: center;
 	box-shadow: inset 0 0 0 1000px rgba(72, 88, 141, 0.7);
-	min-height: 700px;
+	max-height: 700px;
 	color: $intro-text;
 }
 
-@media screen and (max-width: $bp-laptop-l) {
+@media only screen and (max-width: $bp-mobile-s) {
 	.intro {
-		background-size: cover;
+		background-size: 1300px auto;
+		max-height: 570px;
 	}
 }
-@media screen and (max-width: $bp-tablet) {
+
+@media only screen and (max-width: $bp-tablet) {
 	.intro {
-		background-size: auto;
-		background-position: center;
+		max-height: 900px;
 	}
 }
 </style>

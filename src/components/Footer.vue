@@ -2,7 +2,7 @@
 	<footer>
 		<div class="flex fd-row content-container jc-sb ai-center">
 			<p>©2021 Test Vetures Inc. All rights reserved</p>
-			<img src="../assets/styles/img/logo-footer.svg" alt="" />
+			<img src="../assets/img/logo-footer.svg" alt="" />
 		</div>
 	</footer>
 </template>
@@ -15,11 +15,12 @@ export default {
 
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
-
 footer {
 	position: fixed;
 	background-color: white;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	width: 100%;
 	div {
 		height: 120px;
@@ -28,7 +29,6 @@ footer {
 p {
 	font-size: 0.6em;
 }
-
 @media only screen and (max-width: $bp-tablet) {
 	footer {
 		div {

@@ -7,7 +7,7 @@
 				and build our future
 			</p>
 		</div>
-		<div class="learn-more flex col-4 jc-left">
+		<div class="learn-more flex jc-left">
 			<button>
 				Learn more
 			</button>
@@ -27,28 +27,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
-//y 572 x 372
 @import "/src/assets/styles/variables.scss";
 p {
 	font-size: 1.1em;
 }
+
 .company-motto {
 	h1 {
 		color: $intro-text;
 		width: 80%;
-		margin-left: 100px;
+		margin-left: 130px;
 		margin-top: 54px;
 		margin-bottom: 54px;
 	}
 	p {
 		width: 60%;
 		color: $intro-text;
-		margin-left: 130px;
+		margin-left: 165px;
 		margin-bottom: 78px;
 	}
 }
 .learn-more {
-	margin-left: 92px;
 	div {
 		border: 1px solid white;
 		height: 48px;
@@ -56,8 +55,8 @@ p {
 	button {
 		width: 172px;
 		height: 48px;
-		margin-left: 10px;
-
+		margin-left: 130px;
+		margin-bottom: 80px;
 		font-size: 0.8em;
 		font-weight: 700;
 		background-color: transparent;
@@ -77,19 +76,16 @@ p {
 @media only screen and (max-width: $bp-tablet) {
 	.company-motto {
 		h1 {
-			align-self: center;
-		}
-		h1 {
 			color: $intro-text;
 			width: 80%;
-			margin-left: 0px;
-			margin-top: 54px;
-			margin-bottom: 14px;
+			margin-left: 30px;
+			margin-top: 35px;
+			margin-bottom: 20px;
 		}
 		p {
 			color: $intro-text;
-			width: 65%;
-			margin-left: 80px;
+			width: 45%;
+			margin-left: 30px;
 			margin-bottom: 38px;
 		}
 	}
@@ -102,7 +98,7 @@ p {
 		button {
 			width: 172px;
 			height: 48px;
-			margin-left: 80px;
+			margin-left: 30px;
 			font-size: 0.8em;
 			font-weight: 700;
 			background-color: transparent;
@@ -121,17 +117,26 @@ p {
 }
 
 @media only screen and (max-width: $bp-mobile-l) {
+	h1 {
+		color: $intro-text;
+		font-size: 2.3em;
+		width: 80%;
+		margin-top: 0px;
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
 	.company-motto {
 		p {
 			color: $intro-text;
-			width: 65%;
-			margin-left: 40px;
-			margin-bottom: 38px;
+			width: 80%;
+			margin-left: 30px;
+			margin-bottom: 65px;
 		}
 	}
 	.learn-more {
 		button {
-			margin-bottom: 20px;
+			margin-left: 30px;
+			margin-bottom: 30px;
 		}
 	}
 }
