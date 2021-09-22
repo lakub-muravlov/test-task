@@ -182,7 +182,6 @@ a:hover::before {
 	.button {
 		display: block;
 		z-index: 20;
-
 		margin-right: 20px;
 	}
 	.nav-ul {
@@ -196,7 +195,6 @@ a:hover::before {
 		top: -300px;
 		list-style-type: none;
 		transition: 1500ms;
-
 		li {
 			height: 40px;
 			margin-top: 15px;
@@ -216,42 +214,6 @@ a:hover::before {
 }
 
 @media only screen and (max-width: $bp-tablet) {
-	.navbar {
-		display: none;
-	}
-	.submit-application::after {
-		width: 100%;
-	}
-	.button {
-		display: block;
-		z-index: 20;
-		margin-right: 20px;
-	}
-	.nav-ul {
-		z-index: 19;
-		display: inline-block;
-		position: fixed;
-		left: 0;
-		margin: 0;
-		padding: 0;
-		background-color: $heading-text;
-		top: -300px;
-		list-style-type: none;
-		transition: 1500ms;
-
-		li {
-			height: 40px;
-			margin-top: 15px;
-			text-align: center;
-			width: 100vw;
-			&:nth-last-child(n) {
-				margin-bottom: 10px;
-			}
-		}
-	}
-	.nav-ul.show {
-		top: 0;
-	}
 	img {
 		margin-left: 30px;
 	}
