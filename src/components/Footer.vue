@@ -20,6 +20,9 @@ footer {
 	width: 100%;
 	div {
 		height: 120px;
+		img {
+			margin-right: 140px;
+		}
 		p {
 			margin-left: 140px;
 			font-size: 0.6em;
@@ -30,6 +33,9 @@ footer {
 @media only screen and (max-width: $bp-tablet) {
 	footer {
 		div {
+			img {
+				margin-right: 40px;
+			}
 			p {
 				width: 150px;
 				margin-left: 30px;

@@ -55,7 +55,7 @@ export default {
 		@include line-facade();
 		left: 0px;
 		top: calc(100% + 30px);
-		height: 150px;
+		height: 180px;
 	}
 
 	p {
@@ -64,7 +64,7 @@ export default {
 		width: 60%;
 		color: $intro-text;
 		margin-left: 165px;
-		margin-bottom: 78px;
+		margin-bottom: 115px;
 	}
 }
 .learn-more {
@@ -99,7 +99,7 @@ export default {
 		@include line-facade();
 		left: 0px;
 		top: calc(100% + 30px);
-		height: 140px;
+		height: 55px;
 	}
 }
 
@@ -142,13 +142,13 @@ export default {
 	.company-motto {
 		h1 {
 			font-size: 2.3em;
-			margin-top: 0px;
+			margin-top: 65px;
 			margin-left: 30px;
 			margin-bottom: 15px;
 		}
 
 		p {
-			width: 80%;
+			width: 85%;
 			margin-left: 30px;
 			margin-bottom: 65px;
 		}

@@ -33,12 +33,12 @@ export default {
 }
 .company-belief {
 	p {
-		width: 320px;
+		width: 280px;
 		margin-left: 150px;
 		margin-bottom: 110px;
 	}
 	h4 {
-		width: 425px;
+		width: 280px;
 		margin-left: 150px;
 		margin-bottom: 90px;
 		position: relative;
@@ -49,7 +49,7 @@ export default {
 		z-index: 0;
 		content: "";
 		position: absolute;
-		left: 200%;
+		left: 310%;
 		top: -110%;
 		height: calc(600% + 6px);
 		width: 1px;

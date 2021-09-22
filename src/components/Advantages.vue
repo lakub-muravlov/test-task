@@ -129,7 +129,7 @@ export default {
 	.advantages {
 		padding-left: 0px;
 		margin-left: 30px;
-		max-width: calc(100% - 60px);
+		max-width: calc(100% - 30px);
 		h2::before {
 			z-index: -1;
 			display: inline;

@@ -106,13 +106,18 @@ img {
 		margin-left: 0px;
 		padding-top: 124px;
 		margin-bottom: 15px;
+		font-size: 1.8em;
+	}
+	img {
+		width: 55%;
+		transform: translateY(-288px);
 	}
 }
 
 @media screen and (max-width: 520px) {
 	img {
-		width: 60%;
-		transform: translateY(-308px);
+		width: 70%;
+		transform: translateY(-298px);
 	}
 }
 
@@ -127,7 +132,6 @@ img {
 	}
 
 	h2 {
-		font-size: 1.8em;
 		padding-top: 184px;
 	}
 }
