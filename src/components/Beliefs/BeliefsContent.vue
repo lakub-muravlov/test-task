@@ -7,9 +7,9 @@
 			<p class="flex jc-center">
 				{{ contentText }}
 			</p>
-			<h2 class="flex jc-center">
+			<h4 class="flex jc-center">
 				{{ moto }}
-			</h2>
+			</h4>
 		</div>
 	</div>
 </template>
@@ -37,16 +37,29 @@ export default {
 		margin-left: 150px;
 		margin-bottom: 110px;
 	}
-	h2 {
+	h4 {
 		width: 425px;
 		margin-left: 150px;
 		margin-bottom: 90px;
-
+		position: relative;
 		font-size: 1.5em;
 		color: $block-text;
 	}
+	h4::after {
+		z-index: 0;
+		content: "";
+		position: absolute;
+		left: 200%;
+		top: -110%;
+		height: calc(600% + 6px);
+		width: 1px;
+		background-color: #c1c1c1;
+	}
 }
 @media screen and (max-width: $bp-laptop-s) {
+	h4::after {
+		display: none;
+	}
 	.company-belief {
 		p {
 			margin-bottom: 50px;
@@ -61,7 +74,7 @@ export default {
 			margin-left: 30px;
 			margin-bottom: 18px;
 		}
-		h2 {
+		h4 {
 			font-size: 2.4em;
 			width: 90%;
 			justify-content: flex-start;

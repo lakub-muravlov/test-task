@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2>{{ title }}</h2>
+		<h3>{{ title }}</h3>
 		<p>
 			<slot />
 		</p>
@@ -19,12 +19,12 @@ export default {
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
 
-h2 {
+h3 {
 	align-self: flex-end;
 	position: relative;
 	padding-bottom: 80px;
 }
-h2::after {
+h3::after {
 	content: "";
 	width: 40px;
 	position: absolute;
@@ -41,17 +41,17 @@ p {
 	align-self: flex-start;
 }
 @media only screen and (max-width: $bp-laptop-s) {
-	h2 {
+	h3 {
 		height: 100px;
 	}
 }
 @media only screen and (max-width: $bp-tablet) {
-	h2 {
+	h3 {
 		margin-top: 30px;
 		padding-bottom: 60px;
 		align-self: flex-start;
 	}
-	h2::after {
+	h3::after {
 		bottom: 30px;
 	}
 	p {
@@ -62,12 +62,12 @@ p {
 	}
 }
 @media only screen and (max-width: $bp-mobile-l) {
-	h2 {
+	h3 {
 		margin-top: 30px;
 		padding-bottom: 60px;
 		align-self: flex-start;
 	}
-	h2::after {
+	h3::after {
 		bottom: 30px;
 	}
 	p {

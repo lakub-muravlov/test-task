@@ -74,6 +74,7 @@ h1::after {
 	background-color: #c1c1c1;
 }
 img {
+	z-index: 1;
 	max-height: 494px;
 	width: 51%;
 	right: 0;

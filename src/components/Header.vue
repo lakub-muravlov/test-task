@@ -181,6 +181,8 @@ a:hover::before {
 	}
 	.button {
 		display: block;
+		z-index: 20;
+
 		margin-right: 20px;
 	}
 	.nav-ul {

@@ -1,7 +1,7 @@
 <template>
 	<div class="flex beliefs-item cg-30">
 		<div class="">
-			<h2>{{ title }}</h2>
+			<h3>{{ title }}</h3>
 		</div>
 		<p>
 			<slot />
@@ -21,14 +21,14 @@ export default {
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
 
-h2 {
+h3 {
 	white-space: nowrap;
 	margin-left: 0px;
 	align-self: flex-start;
 	justify-self: end;
 	position: relative;
 }
-h2::after {
+h3::after {
 	content: "";
 	width: 40px;
 	position: absolute;
@@ -50,12 +50,12 @@ p {
 	p {
 		width: 100%;
 	}
-	h2::after {
+	h3::after {
 		left: 0;
 	}
 }
 @media screen and (max-width: $bp-tablet) {
-	h2::after {
+	h3::after {
 		content: "";
 		width: 40px;
 		position: absolute;
@@ -75,7 +75,7 @@ p {
 		flex-direction: column;
 		row-gap: 40px;
 	}
-	h2 {
+	h3 {
 		margin-left: 30px;
 		margin-top: 0%;
 		justify-self: flex-start;
@@ -86,7 +86,7 @@ p {
 
 		justify-self: flex-start;
 	}
-	h2::after {
+	h3::after {
 		content: "";
 		width: 25%;
 		position: absolute;
