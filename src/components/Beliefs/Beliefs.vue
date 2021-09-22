@@ -85,6 +85,9 @@ img {
 	transform: translateY(-247px);
 }
 @media screen and (max-width: $bp-laptop-s) {
+	.beliefs {
+		min-height: 500px;
+	}
 	h2::before {
 		display: none;
 	}

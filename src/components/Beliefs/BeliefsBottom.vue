@@ -18,9 +18,7 @@ export default {
 .offers-grid {
 	overflow: hidden;
 	min-height: 160px;
-
 	display: grid;
-
 	grid-gap: 86px 30px;
 	grid-template-columns: 360px 360px;
 }
@@ -32,7 +30,6 @@ export default {
 @media screen and (max-width: 920px) {
 	.item-wrapper {
 		padding-bottom: 40px;
-		margin-left: 160px;
 	}
 	.offers-grid {
 		column-gap: 50px;
@@ -41,7 +38,6 @@ export default {
 }
 @media screen and (max-width: $bp-tablet) {
 	.item-wrapper {
-		padding-bottom: 40px;
 		margin-left: 30px;
 	}
 	.offers-grid {
@@ -56,13 +52,10 @@ export default {
 }
 @media screen and (max-width: $bp-mobile-l) {
 	.item-wrapper {
-		padding-bottom: 40px;
 		padding-top: 30px;
 	}
 	.offers-grid {
 		max-width: calc(100vw - 30px);
-		overflow: hidden;
-		display: grid;
 		margin-top: 0px;
 		grid-template-columns: 200px;
 		grid-template-rows: auto;
