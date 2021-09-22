@@ -16,7 +16,6 @@ export default {
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
 footer {
-	position: fixed;
 	background-color: white;
 	bottom: 0;
 	left: 0;
@@ -24,28 +23,46 @@ footer {
 	width: 100%;
 	div {
 		height: 120px;
+		p {
+			margin-left: 140px;
+			font-size: 0.6em;
+		}
 	}
 }
-p {
-	font-size: 0.6em;
-}
+
 @media only screen and (max-width: $bp-tablet) {
+	footer {
+		div {
+			p {
+				width: 150px;
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $bp-mobile-l) {
 	footer {
 		div {
 			display: flex;
 			flex-direction: column;
+			justify-content: flex-start;
 			align-items: flex-start;
 			width: 90%;
-			height: 120px;
+			height: 205px;
+			margin-left: 30px;
+			p {
+				margin-left: 0px;
+				margin-top: 35px;
+				margin-bottom: 55px;
+				width: 135px;
+				margin-top: 30px;
+				font-size: 0.6em;
+			}
 		}
-		p {
-			width: 45%;
-			margin-top: 30px;
-			font-size: 0.6em;
-		}
+
 		img {
-			width: 30%;
-			margin-bottom: 30px;
+			width: 175px;
 		}
 	}
 }

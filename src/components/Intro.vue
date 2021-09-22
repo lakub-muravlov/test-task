@@ -23,7 +23,7 @@ export default {
 	background-size: cover;
 	background-position: center;
 	box-shadow: inset 0 0 0 1000px rgba(72, 88, 141, 0.7);
-	max-height: 700px;
+	min-height: 500px;
 	color: $intro-text;
 }
 
@@ -31,12 +31,6 @@ export default {
 	.intro {
 		background-size: 1300px auto;
 		max-height: 570px;
-	}
-}
-
-@media only screen and (max-width: $bp-tablet) {
-	.intro {
-		max-height: 900px;
 	}
 }
 </style>

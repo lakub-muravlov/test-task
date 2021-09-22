@@ -62,6 +62,14 @@ h2 {
 	align-items: center;
 }
 
+.pr {
+	position: relative;
+}
+
+.cg-30 {
+	column-gap: 30px;
+}
+
 .content-container {
 	width: 100%;
 	max-width: 1220px;
@@ -96,7 +104,7 @@ h2 {
 @media only screen and (max-width: $bp-tablet) {
 	.content-container {
 		width: 100%;
-		max-width: 720px;
+		max-width: 100%;
 		//border: 1px solid red;
 	}
 	.flex {

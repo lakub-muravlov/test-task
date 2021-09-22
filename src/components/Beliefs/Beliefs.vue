@@ -1,6 +1,8 @@
 <template>
 	<section class="beliefs">
-		<h1 class="flex jc-left">Beliefs</h1>
+		<div class="content-container">
+			<h1 class="flex jc-left">Beliefs</h1>
+		</div>
 		<BeliefsContent :contentText="contentText" :moto="moto">
 			<img src="../../assets/img/beliefs.png" alt="" />
 		</BeliefsContent>
@@ -14,6 +16,7 @@
 				successful line of work.
 			</BeliefsItem>
 		</BeliefsBottom>
+		<!-- </div> -->
 	</section>
 </template>
 
@@ -32,7 +35,7 @@ export default {
 		return {
 			contentText:
 				"We believe in teams. Crypto is about constant iteration and being in touch with the community.",
-			moto: "Flexible approach,consistent results",
+			moto: "Flexible approach, consistent results",
 		};
 	},
 };
@@ -44,62 +47,139 @@ export default {
 .beliefs {
 	background-color: $beliefs-section-bg;
 	min-height: 700px;
-	margin-bottom: 120px;
 }
 h1 {
+	position: relative;
 	align-self: flex-start;
-	margin-left: 100px;
-	margin-top: 54px;
+	padding-left: 130px;
+	padding-top: 70px;
 	margin-bottom: 54px;
 }
-
+h1::before {
+	content: "";
+	position: absolute;
+	left: 141.5px;
+	top: 0;
+	height: 45px;
+	width: 1px;
+	background-color: #c1c1c1;
+}
+h1::after {
+	content: "";
+	position: absolute;
+	left: 142px;
+	top: calc(100% + 20px);
+	height: 545px;
+	width: 1px;
+	background-color: #c1c1c1;
+}
 img {
-	width: 43vw;
 	max-height: 494px;
-	max-width: 720px;
-	position: relative;
-
-	margin-bottom: -350px;
-	top: -450px;
-	left: 700px;
+	width: 51%;
 	right: 0;
+	position: absolute;
+	overflow: hidden;
+	margin-bottom: -35%;
+	transform: translateY(-247px);
 }
 @media screen and (max-width: $bp-laptop-s) {
+	h1::before {
+		display: none;
+	}
+	h1::after {
+		display: none;
+	}
 	img {
-		left: 550px;
-		margin-bottom: -250px;
+		max-height: 494px;
+		width: 45%;
+		right: 0;
+		position: absolute;
+		overflow: hidden;
+		transform: translateY(-247px);
 	}
 }
-@media screen and (max-width: $bp-tablet) {
-	.beliefs {
-		margin-bottom: 120px;
-	}
 
+@media screen and (max-width: $bp-tablet) {
 	h1 {
 		justify-content: flex-start;
+		padding-left: 30px;
 		margin-left: 0px;
-		margin-top: 24px;
-		margin-bottom: 24px;
+		padding-top: 124px;
+		margin-bottom: 15px;
 	}
-
+}
+@media screen and (max-width: 520px) {
 	img {
-		width: 50vw;
-		position: relative;
-		margin-bottom: -350vw;
-		top: -510px;
-		left: 290px;
+		max-height: 494px;
+		width: 60%;
 		right: 0;
+		position: absolute;
+		overflow: hidden;
+
+		transform: translateY(-308px);
 	}
 }
 
 @media screen and (max-width: $bp-mobile-l) {
 	img {
-		width: 70vw;
-		position: relative;
-		margin-bottom: -350vw;
-		top: -440px;
-		left: 95px;
+		max-height: 494px;
+		width: 90%;
 		right: 0;
+		position: absolute;
+		overflow: hidden;
+
+		transform: translateY(-348px);
+	}
+
+	h1 {
+		justify-content: flex-start;
+		padding-left: 30px;
+		font-size: 1.8em;
+		margin-left: 0px;
+		padding-top: 184px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: $bp-mobile-m) {
+	img {
+		max-height: 494px;
+		width: 90%;
+		right: 0;
+		position: absolute;
+		overflow: hidden;
+
+		transform: translateY(-328px);
+	}
+
+	h1 {
+		justify-content: flex-start;
+		padding-left: 30px;
+		font-size: 1.8em;
+		margin-left: 0px;
+		padding-top: 184px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: $bp-mobile-s) {
+	img {
+		max-height: 494px;
+		width: 90%;
+		right: 0;
+		position: absolute;
+		overflow: hidden;
+
+		transform: translateY(-288px);
+	}
+
+	h1 {
+		justify-content: flex-start;
+		padding-left: 30px;
+		font-size: 1.8em;
+		margin-left: 0px;
+		padding-top: 124px;
+		margin-bottom: 15px;
 	}
 }
 </style>

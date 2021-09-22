@@ -34,11 +34,30 @@ p {
 
 .company-motto {
 	h1 {
+		position: relative;
 		color: $intro-text;
 		width: 80%;
 		margin-left: 130px;
 		margin-top: 54px;
 		margin-bottom: 54px;
+	}
+	h1::before {
+		content: "";
+		position: absolute;
+		left: 0px;
+		bottom: calc(100% + 30px);
+		height: 180px;
+		width: 1px;
+		background-color: #fff;
+	}
+	h1::after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: calc(100% + 30px);
+		height: 150px;
+		width: 1px;
+		background-color: #fff;
 	}
 	p {
 		width: 60%;
@@ -53,9 +72,10 @@ p {
 		height: 48px;
 	}
 	button {
+		position: relative;
 		width: 172px;
 		height: 48px;
-		margin-left: 130px;
+		margin-left: 140px;
 		margin-bottom: 80px;
 		font-size: 0.8em;
 		font-weight: 700;
@@ -70,6 +90,27 @@ p {
 		color: black;
 		background-color: #fff;
 		transition: 700ms;
+	}
+	button::after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: calc(100% + 30px);
+		height: 140px;
+		width: 1px;
+		background-color: #fff;
+	}
+}
+
+@media only screen and (max-width: $bp-laptop-s) {
+	h1::before {
+		display: none;
+	}
+	h1::after {
+		display: none;
+	}
+	button::after {
+		display: none;
 	}
 }
 

@@ -27,7 +27,9 @@
 			<a href="">Advantages</a>
 			<a href="">Beliefs</a>
 			<a href="">Insights</a>
-			<a href="" class="submit-application">Submit application</a>
+			<div class="line">
+				<a href="" class="submit-application">Submit application</a>
+			</div>
 		</nav>
 	</header>
 </template>
@@ -100,7 +102,7 @@ export default {
 }
 
 img {
-	margin-left: 130px;
+	margin-left: 160px;
 }
 
 .navbar {
@@ -156,6 +158,61 @@ a:hover::before {
 	transform: scaleX(1);
 }
 
+.line {
+	position: relative;
+}
+
+.line::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: -250%;
+	height: 880px;
+	width: 1px;
+	background-color: #fff;
+}
+
+@media only screen and (max-width: $bp-laptop-s) {
+	.navbar {
+		display: none;
+	}
+	.submit-application::after {
+		width: 100%;
+	}
+	.button {
+		display: block;
+		margin-right: 20px;
+	}
+	.nav-ul {
+		z-index: 19;
+		display: inline-block;
+		position: fixed;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		background-color: $heading-text;
+		top: -300px;
+		list-style-type: none;
+		transition: 1500ms;
+
+		li {
+			height: 40px;
+			margin-top: 15px;
+			text-align: center;
+			width: 100vw;
+			&:nth-last-child(n) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.nav-ul.show {
+		top: 0;
+	}
+	img {
+		margin-left: 160px;
+	}
+}
+
 @media only screen and (max-width: $bp-tablet) {
 	.navbar {
 		display: none;
@@ -195,6 +252,9 @@ a:hover::before {
 	}
 	img {
 		margin-left: 30px;
+	}
+	.line::before {
+		display: none;
 	}
 }
 </style>
