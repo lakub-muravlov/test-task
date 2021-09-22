@@ -17,9 +17,6 @@ export default {
 @import "/src/assets/styles/variables.scss";
 footer {
 	background-color: white;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	width: 100%;
 	div {
 		height: 120px;
@@ -44,7 +41,6 @@ footer {
 @media only screen and (max-width: $bp-mobile-l) {
 	footer {
 		div {
-			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
@@ -53,14 +49,11 @@ footer {
 			margin-left: 30px;
 			p {
 				margin-left: 0px;
-				margin-top: 35px;
 				margin-bottom: 55px;
 				width: 135px;
 				margin-top: 30px;
-				font-size: 0.6em;
 			}
 		}
-
 		img {
 			width: 175px;
 		}
