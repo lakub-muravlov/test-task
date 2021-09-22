@@ -34,17 +34,18 @@ h3::after {
 	border-style: solid;
 }
 p {
-	font-size: 0.8em;
 	margin-top: 0px;
 	width: 80%;
 	margin-bottom: 0px;
 	align-self: flex-start;
 }
+
 @media only screen and (max-width: $bp-laptop-s) {
 	h3 {
 		height: 100px;
 	}
 }
+
 @media only screen and (max-width: $bp-tablet) {
 	h3 {
 		margin-top: 30px;
@@ -52,29 +53,16 @@ p {
 		align-self: flex-start;
 	}
 	h3::after {
-		bottom: 30px;
+		bottom: 40px;
 	}
 	p {
-		width: 80%;
-		margin-top: 0px;
 		margin-bottom: 30px;
-		align-self: flex-start;
 	}
 }
+
 @media only screen and (max-width: $bp-mobile-l) {
-	h3 {
-		margin-top: 30px;
-		padding-bottom: 60px;
-		align-self: flex-start;
-	}
 	h3::after {
-		bottom: 30px;
-	}
-	p {
-		width: 80%;
-		margin-top: 0px;
-		margin-bottom: 30px;
-		align-self: flex-start;
+		bottom: 40px;
 	}
 }
 </style>
