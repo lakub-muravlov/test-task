@@ -6,10 +6,10 @@
 
 		<ul class="nav-ul" :class="{ show: showMenu }">
 			<li>
-				<a href="">Advantages</a>
+				<a href="#advanatages">Advantages</a>
 			</li>
 			<li>
-				<a href="">Beliefs</a>
+				<a href="#beliefs">Beliefs</a>
 			</li>
 			<li>
 				<a href="">Insights</a>
@@ -24,8 +24,8 @@
 			<div class="bar3"></div>
 		</div>
 		<nav class="navbar flex ai-center jc-right">
-			<a href="">Advantages</a>
-			<a href="">Beliefs</a>
+			<a href="#advanatages">Advantages</a>
+			<a href="#beliefs">Beliefs</a>
 			<a href="">Insights</a>
 			<div class="line">
 				<a href="" class="submit-application">Submit application</a>

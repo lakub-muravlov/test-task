@@ -1,7 +1,7 @@
 <template>
 	<section class="beliefs">
 		<div class="content-container">
-			<h1 class="flex jc-left">Beliefs</h1>
+			<h1 class="flex jc-left" id="beliefs">Beliefs</h1>
 		</div>
 		<BeliefsContent :contentText="contentText" :moto="moto">
 			<img src="../../assets/img/beliefs.png" alt="" />

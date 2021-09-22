@@ -1,6 +1,6 @@
 <template>
 	<section class="advantages content-container" id="advantages">
-		<h1>Advantages</h1>
+		<h1 id="advanatages">Advantages</h1>
 		<AdvantageItem title="Partnership">
 			We make sure projects become successful through strategic partnership and
 			guidance
