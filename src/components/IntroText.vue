@@ -28,12 +28,14 @@ export default {
 
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
+
 @mixin line-facade {
 	content: "";
 	position: absolute;
 	width: 1px;
 	background-color: #fff;
 }
+
 .company-motto {
 	h1 {
 		position: relative;
@@ -41,18 +43,21 @@ export default {
 		width: 80%;
 		margin: 54px 0 54px 130px;
 	}
+
 	h1::before {
 		@include line-facade();
 		left: 0px;
 		bottom: calc(100% + 30px);
 		height: 180px;
 	}
+
 	h1::after {
 		@include line-facade();
 		left: 0px;
 		top: calc(100% + 30px);
 		height: 150px;
 	}
+
 	p {
 		font-weight: 700;
 		font-size: 1.1em;
@@ -67,6 +72,7 @@ export default {
 		border: 1px solid white;
 		height: 48px;
 	}
+
 	button {
 		position: relative;
 		width: 172px;
@@ -82,11 +88,13 @@ export default {
 		border-color: white;
 		color: $intro-text;
 	}
+
 	button:hover {
 		color: black;
 		background-color: #fff;
 		transition: 700ms;
 	}
+
 	button::after {
 		@include line-facade();
 		left: 0px;
@@ -99,9 +107,11 @@ export default {
 	h1::before {
 		display: none;
 	}
+
 	h1::after {
 		display: none;
 	}
+
 	button::after {
 		display: none;
 	}
@@ -112,12 +122,14 @@ export default {
 		h1 {
 			margin: 35px 0 20px 30px;
 		}
+
 		p {
 			width: 45%;
 			margin-left: 30px;
 			margin-bottom: 38px;
 		}
 	}
+
 	.learn-more {
 		margin-left: 0px;
 		button {
@@ -134,12 +146,14 @@ export default {
 			margin-left: 30px;
 			margin-bottom: 15px;
 		}
+
 		p {
 			width: 80%;
 			margin-left: 30px;
 			margin-bottom: 65px;
 		}
 	}
+
 	.learn-more {
 		button {
 			margin-left: 30px;
