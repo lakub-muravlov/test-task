@@ -28,38 +28,34 @@ export default {
 
 <style scoped lang="scss">
 @import "/src/assets/styles/variables.scss";
-p {
-	font-size: 1.1em;
+@mixin line-facade {
+	content: "";
+	position: absolute;
+	width: 1px;
+	background-color: #fff;
 }
-
 .company-motto {
 	h1 {
 		position: relative;
 		color: $intro-text;
 		width: 80%;
-		margin-left: 130px;
-		margin-top: 54px;
-		margin-bottom: 54px;
+		margin: 54px 0 54px 130px;
 	}
 	h1::before {
-		content: "";
-		position: absolute;
+		@include line-facade();
 		left: 0px;
 		bottom: calc(100% + 30px);
 		height: 180px;
-		width: 1px;
-		background-color: #fff;
 	}
 	h1::after {
-		content: "";
-		position: absolute;
+		@include line-facade();
 		left: 0px;
 		top: calc(100% + 30px);
 		height: 150px;
-		width: 1px;
-		background-color: #fff;
 	}
 	p {
+		font-weight: 700;
+		font-size: 1.1em;
 		width: 60%;
 		color: $intro-text;
 		margin-left: 165px;
@@ -75,8 +71,7 @@ p {
 		position: relative;
 		width: 172px;
 		height: 48px;
-		margin-left: 140px;
-		margin-bottom: 80px;
+		margin: 0 0 80px 140px;
 		font-size: 0.8em;
 		font-weight: 700;
 		background-color: transparent;
@@ -84,6 +79,7 @@ p {
 		border-top: 1px solid white;
 		border-bottom: 1px solid white;
 		border-right: none;
+		border-color: white;
 		color: $intro-text;
 	}
 	button:hover {
@@ -92,13 +88,10 @@ p {
 		transition: 700ms;
 	}
 	button::after {
-		content: "";
-		position: absolute;
+		@include line-facade();
 		left: 0px;
 		top: calc(100% + 30px);
 		height: 140px;
-		width: 1px;
-		background-color: #fff;
 	}
 }
 
@@ -117,14 +110,9 @@ p {
 @media only screen and (max-width: $bp-tablet) {
 	.company-motto {
 		h1 {
-			color: $intro-text;
-			width: 80%;
-			margin-left: 30px;
-			margin-top: 35px;
-			margin-bottom: 20px;
+			margin: 35px 0 20px 30px;
 		}
 		p {
-			color: $intro-text;
 			width: 45%;
 			margin-left: 30px;
 			margin-bottom: 38px;
@@ -132,43 +120,21 @@ p {
 	}
 	.learn-more {
 		margin-left: 0px;
-		div {
-			border: 1px solid white;
-			height: 48px;
-		}
 		button {
-			width: 172px;
-			height: 48px;
 			margin-left: 30px;
-			font-size: 0.8em;
-			font-weight: 700;
-			background-color: transparent;
-			border-left: 1px solid white;
-			border-top: 1px solid white;
-			border-bottom: 1px solid white;
-			border-right: none;
-			color: $intro-text;
-		}
-		button:hover {
-			color: black;
-			background-color: #fff;
-			transition: 700ms;
 		}
 	}
 }
 
 @media only screen and (max-width: $bp-mobile-l) {
-	h1 {
-		color: $intro-text;
-		font-size: 2.3em;
-		width: 80%;
-		margin-top: 0px;
-		margin-left: 30px;
-		margin-bottom: 15px;
-	}
 	.company-motto {
+		h1 {
+			font-size: 2.3em;
+			margin-top: 0px;
+			margin-left: 30px;
+			margin-bottom: 15px;
+		}
 		p {
-			color: $intro-text;
 			width: 80%;
 			margin-left: 30px;
 			margin-bottom: 65px;
