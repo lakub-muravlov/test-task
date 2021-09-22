@@ -69,20 +69,28 @@ export default {
 @media screen and (max-width: $bp-tablet) {
 	.company-belief {
 		p {
-			font-size: 0.8em;
-			width: 90%;
+			width: 60%;
 			margin-left: 30px;
 			margin-bottom: 18px;
 		}
 		h4 {
-			font-size: 2.4em;
-			width: 90%;
+			width: 65%;
 			justify-content: flex-start;
 			margin-top: 55px;
 			margin-bottom: 0;
 			margin-left: 30px;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			color: $block-text;
+		}
+	}
+}
+@media screen and (max-width: $bp-mobile-l) {
+	.company-belief {
+		p {
+			width: 90%;
+		}
+		h4 {
+			width: 90%;
 		}
 	}
 }
