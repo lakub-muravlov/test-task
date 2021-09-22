@@ -117,6 +117,10 @@ img {
 }
 
 @media screen and (max-width: $bp-mobile-l) {
+	.beliefs {
+		min-height: 700px;
+		padding-bottom: 20px;
+	}
 	img {
 		width: 90%;
 		transform: translateY(-348px);

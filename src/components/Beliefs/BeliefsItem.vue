@@ -28,6 +28,7 @@ h3 {
 	justify-self: end;
 	position: relative;
 }
+
 h3::after {
 	content: "";
 	width: 40px;
@@ -37,8 +38,8 @@ h3::after {
 	border-width: 0 0 2px;
 	border-style: solid;
 }
+
 p {
-	font-size: 0.8em;
 	width: 200px;
 }
 @media screen and (max-width: 920px) {
@@ -55,45 +56,24 @@ p {
 	}
 }
 @media screen and (max-width: $bp-tablet) {
-	h3::after {
-		content: "";
-		width: 40px;
-		position: absolute;
-		left: 0;
-		bottom: -20px;
-		border-width: 0 0 2px;
-		border-style: solid;
-	}
 	.beliefs-item {
-		flex-direction: column;
 		row-gap: 40px;
 	}
 }
 
 @media screen and (max-width: $bp-mobile-l) {
-	.beliefs-item {
-		flex-direction: column;
-		row-gap: 40px;
-	}
 	h3 {
 		margin-left: 30px;
-		margin-top: 0%;
+		margin-top: 0;
 		justify-self: flex-start;
 		position: relative;
 	}
 	p {
-		margin-left: 40px;
-
+		margin-left: 30px;
 		justify-self: flex-start;
 	}
 	h3::after {
-		content: "";
 		width: 25%;
-		position: absolute;
-		left: 0;
-		bottom: -20px;
-		border-width: 0 0 2px;
-		border-style: solid;
 	}
 }
 </style>

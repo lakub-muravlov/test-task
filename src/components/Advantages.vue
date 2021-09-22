@@ -77,8 +77,8 @@ export default {
 .right-line::before {
 	@include line-facade();
 	left: calc(-205.3% - 10px);
-	top: 100%;
-	height: 91px;
+	top: calc(100% + 11px);
+	height: 80px;
 	width: 1.5px;
 }
 
