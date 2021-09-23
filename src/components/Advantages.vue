@@ -40,6 +40,7 @@ export default {
 }
 
 .advantages {
+	position: relative;
 	min-height: 200px;
 	padding-top: 70px;
 	padding-bottom: 90px;
@@ -54,33 +55,34 @@ export default {
 		grid-column-start: 1;
 		grid-column-end: 4;
 	}
-	h2::before {
-		@include line-facade();
-		left: 4px;
-		bottom: -110%;
-		height: 55px;
-		width: 1px;
-	}
-	h2::after {
-		@include line-facade();
-		left: 4px;
-		top: -110%;
-		height: 45px;
-		width: 1px;
-	}
+}
+
+.advantages::before {
+	@include line-facade();
+	left: 141px;
+	top: 0;
+	height: 45px;
+	width: 1px;
+}
+.advantages::after {
+	@include line-facade();
+	left: 141px;
+	top: 157px;
+	height: 45px;
+	width: 1px;
 }
 
 .right-line {
 	position: relative;
 }
 
-.right-line::before {
-	@include line-facade();
-	left: calc(-205.3% - 10px);
-	top: calc(100% + 11px);
-	height: 80px;
-	width: 1.5px;
-}
+// .right-line::before {
+// 	@include line-facade();
+// 	left: calc(-205.3% - 10px);
+// 	top: calc(100% + 11px);
+// 	height: 80px;
+// 	width: 1.5px;
+// }
 
 .right-line::after {
 	@include line-facade();
@@ -97,10 +99,10 @@ export default {
 	.right-line::before {
 		display: none;
 	}
-	h2::before {
+	.advantages::before {
 		display: none;
 	}
-	h2::after {
+	.advantages::after {
 		display: none;
 	}
 }

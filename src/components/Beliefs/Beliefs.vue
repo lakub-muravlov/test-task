@@ -64,8 +64,8 @@ h2 {
 h2::before {
 	@include line-facade();
 	left: 141.5px;
-	top: 0;
-	height: 45px;
+	bottom: calc(50% + 10px);
+	height: 125px;
 	background-color: #c1c1c1;
 }
 h2::after {

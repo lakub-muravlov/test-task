@@ -49,7 +49,7 @@ export default {
 		z-index: 0;
 		content: "";
 		position: absolute;
-		left: 310%;
+		left: 300%;
 		top: -110%;
 		height: calc(600% + 6px);
 		width: 1px;
